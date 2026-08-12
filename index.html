@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Rishat — Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Md. Rishat, a Software Engineering student specializing in Python, Data Science, Machine Learning and MLOps." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-mark">
+        <span>M</span><span>R</span>
+      </div>
+      <div class="loader-name">Md.&nbsp;Rishat</div>
+      <div class="loader-role">Software&nbsp;Engineering&nbsp;Student</div>
+      <div class="loader-bar"><span class="loader-bar-fill"></span></div>
+    </div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" id="scrollProgress" role="presentation"></div>
+
+  <!-- ============ MOUSE GLOW ============ -->
+  <div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+  <!-- ============ SKIP LINK ============ -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="#home" class="nav-logo" aria-label="Md. Rishat — Home">
+        <span class="logo-mark">MR</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#journey" class="nav-link" data-nav>Journey</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm" href="assets/resume/Md_Rishat_Resume.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="nav-burger" id="navBurger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="particles" id="particles"></div>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-copy" data-reveal>
+          <p class="hero-eyebrow">Hello, my name is</p>
+          <h1 class="hero-title">I'm&nbsp;<span class="text-gradient">Md.&nbsp;Rishat</span></h1>
+          <p class="hero-role">Software Engineering Student</p>
+
+          <p class="hero-typing">
+            <span class="typing-text" id="typingText"></span><span class="typing-cursor" aria-hidden="true">|</span>
+          </p>
+
+          <p class="hero-desc">
+            Motivated Software Engineering student skilled in Python, Data Science, and Machine Learning.
+            Currently deepening my expertise in <strong>MLOps &amp; ML Deployment</strong> — Docker, CI/CD,
+            GitHub Actions, AWS, model deployment, monitoring, and end-to-end ML pipelines.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-ripple">
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-ripple">
+              <span>Contact Me</span>
+            </a>
+            <a href="assets/resume/Md_Rishat_Resume.pdf" class="btn btn-ghost btn-ripple" download>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-stats" id="heroStats">
+            <div class="stat">
+              <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">ML &amp; Web Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="8">0</span>
+              <span class="stat-label">Core Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Curiosity Driven</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="terminal-title">train_model.py</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="tk-comment"># training a churn-prediction model</span></p>
+              <p><span class="tk-kw">import</span> pandas <span class="tk-kw">as</span> pd</p>
+              <p><span class="tk-kw">from</span> sklearn.linear_model <span class="tk-kw">import</span> LogisticRegression</p>
+              <p>&nbsp;</p>
+              <p>model = LogisticRegression()</p>
+              <p>model.fit(X_train, y_train)</p>
+              <p>&nbsp;</p>
+              <p class="tk-out">&gt; accuracy: <span class="tk-num typing-out" data-final="0.94">0.00</span></p>
+              <p class="tk-out">&gt; status: <span class="tk-ok">deployed to AWS ✓</span></p>
+              <p class="terminal-caret">_</p>
+            </div>
+          </div>
+          <div class="floating-badge badge-1">🐍 Python</div>
+          <div class="floating-badge badge-2">🤖 ML Ops</div>
+          <div class="floating-badge badge-3">☁️ AWS</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-eyebrow" data-reveal>01 — About</p>
+        <h2 class="section-title" data-reveal>A student who ships things,<br />not just studies them.</h2>
+
+        <div class="about-grid">
+          <p class="about-lead" data-reveal>
+            I'm a Software Engineering student who enjoys turning ideas into working products — from
+            responsive websites to trained machine learning models. I'm passionate about
+            <strong>AI &amp; ML</strong>, genuinely enjoy building clean, responsive interfaces, and I'm
+            currently deep in <strong>MLOps &amp; ML Deployment</strong>: containerizing models, wiring up
+            CI/CD, and getting them safely into production. I'm drawn to Data Science because it turns
+            messy data into decisions, and I like nothing more than solving a real-world problem end to end.
+          </p>
+
+          <div class="about-cards">
+            <div class="glass-card about-card" data-reveal>
+              <div class="about-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+              </div>
+              <h3>Education</h3>
+              <p>Studying Software Engineering, building a strong foundation in programming, systems and problem-solving.</p>
+            </div>
+
+            <div class="glass-card about-card" data-reveal>
+              <div class="about-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h3>Learning</h3>
+              <p>Currently focused on MLOps &amp; ML Deployment — Docker, CI/CD, GitHub Actions, AWS, and monitoring pipelines.</p>
+            </div>
+
+            <div class="glass-card about-card" data-reveal>
+              <div class="about-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              </div>
+              <h3>Interests</h3>
+              <p>Data Science, machine learning, and building responsive, accessible websites people enjoy using.</p>
+            </div>
+
+            <div class="glass-card about-card" data-reveal>
+              <div class="about-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+              </div>
+              <h3>Goals</h3>
+              <p>Become a well-rounded engineer who can research, build, and ship real machine learning systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-eyebrow" data-reveal>02 — Skills</p>
+        <h2 class="section-title" data-reveal>Tools I build with.</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-cat-title">Programming</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">&lt;/&gt;</span><span class="skill-name">HTML5</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="90"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">#</span><span class="skill-name">CSS3</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="88"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">JS</span><span class="skill-name">JavaScript</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="80"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">C</span><span class="skill-name">C</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="70"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">Py</span><span class="skill-name">Python</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="85"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">Jv</span><span class="skill-name">Java</span><span class="skill-tag">Learning</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="40"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-cat-title">Tools</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">⎇</span><span class="skill-name">Git</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="82"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">Gh</span><span class="skill-name">GitHub</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="82"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">Vs</span><span class="skill-name">VS Code</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="90"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-cat-title">Currently Learning</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">⚙</span><span class="skill-name">MLOps &amp; ML Deployment</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="55"></span></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-top"><span class="skill-icon">▦</span><span class="skill-name">Responsive Design</span></div>
+                <div class="skill-bar"><span class="skill-bar-fill" data-level="85"></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-eyebrow" data-reveal>03 — Projects</p>
+        <h2 class="section-title" data-reveal>Things I've built.</h2>
+        <div class="project-grid" id="projectGrid">
+          <!-- Injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section section-alt" id="journey">
+      <div class="container">
+        <p class="section-eyebrow" data-reveal>04 — Journey</p>
+        <h2 class="section-title" data-reveal>How I got here.</h2>
+
+        <ol class="timeline" id="timeline">
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Start</span>
+              <h3>Started Software Engineering</h3>
+              <p>Began my degree and my first real steps into programming.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Foundations</span>
+              <h3>Learned HTML &amp; CSS</h3>
+              <p>Built my first pages and fell in love with structuring the web.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Practice</span>
+              <h3>Built Responsive Websites</h3>
+              <p>Learned Flexbox and Grid to make layouts that work on every screen.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Frontend</span>
+              <h3>Learned JavaScript &amp; Frontend Development</h3>
+              <p>Started adding interactivity and logic to the interfaces I built.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Workflow</span>
+              <h3>Learned Git &amp; GitHub</h3>
+              <p>Adopted version control and started collaborating like a real engineer.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Project</span>
+              <h3>Built ResumeIQ — Smart Resume Analyzer &amp; Career Assistant</h3>
+              <p>Shipped a resume scoring platform with HTML, CSS &amp; JavaScript.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Pivot</span>
+              <h3>Started Learning Python &amp; Machine Learning</h3>
+              <p>Moved beyond the frontend into data, models, and machine learning.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Project</span>
+              <h3>Built Customer Churn Prediction</h3>
+              <p>Trained a Logistic Regression model on real preprocessing &amp; EDA work.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Project</span>
+              <h3>Built Fake News Detection using NLP</h3>
+              <p>Applied TF-IDF and classification models to detect misinformation.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Project</span>
+              <h3>Built Cardiovascular Disease Prediction</h3>
+              <p>Used ensemble classifiers and feature analysis for medical risk prediction.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot timeline-dot-active"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag timeline-tag-active">Now</span>
+              <h3>Currently Learning MLOps, AWS &amp; Java</h3>
+              <p>Focused on getting models into production and growing my engineering toolkit.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        <p class="section-eyebrow" data-reveal>05 — Contact</p>
+        <h2 class="section-title" data-reveal>Let's build something together.</h2>
+        <p class="section-sub" data-reveal>Have a project, an opportunity, or just want to say hi? My inbox is open.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <a class="contact-link" href="mailto:mdrishat@example.com">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              </span>
+              mdrishat@example.com
+            </a>
+            <a class="contact-link" href="https://github.com/mdrishat" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.57.1.78-.25.78-.55v-2.15c-3.2.7-3.87-1.35-3.87-1.35-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.42.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              </span>
+              github.com/mdrishat
+            </a>
+            <a class="contact-link" href="https://linkedin.com/in/mdrishat" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              </span>
+              linkedin.com/in/mdrishat
+            </a>
+
+            <p class="contact-note">Based on Bangladesh Standard Time — I usually reply within a day.</p>
+          </div>
+
+          <form class="glass-card contact-form" id="contactForm" data-reveal novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+                <span class="field-error" id="nameError"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+              <span class="field-error" id="subjectError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-ripple form-submit">
+              <span>Send Message</span>
+            </button>
+
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              <svg class="success-check" width="52" height="52" viewBox="0 0 52 52">
+                <circle class="success-circle" cx="26" cy="26" r="24" fill="none"/>
+                <path class="success-path" fill="none" d="M14 27l7 7 16-16"/>
+              </svg>
+              <p>Message sent — thanks for reaching out!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">MR</span>
+        <p>Md. Rishat — Software Engineering Student, building with code &amp; data.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/mdrishat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.57.1.78-.25.78-.55v-2.15c-3.2.7-3.87-1.35-3.87-1.35-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.42.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/mdrishat" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="mailto:mdrishat@example.com" aria-label="Send an email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© <span id="year"></span> Md. Rishat. All rights reserved.</p>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+  </footer>
+
+  <div class="page-fade" id="pageFade" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
